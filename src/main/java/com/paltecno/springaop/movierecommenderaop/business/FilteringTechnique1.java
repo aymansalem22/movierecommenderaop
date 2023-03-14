@@ -3,7 +3,7 @@ package com.paltecno.springaop.movierecommenderaop.business;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.paltecno.springaop.movierecommenderaop.repository.Movie;
+import com.paltecno.springaop.movierecommenderaop.data.Movie;
 
 @Service
 public class FilteringTechnique1 {

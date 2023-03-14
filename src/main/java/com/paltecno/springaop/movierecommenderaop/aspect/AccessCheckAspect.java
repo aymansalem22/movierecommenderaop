@@ -7,12 +7,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
 
-//@Aspect
+@Aspect
 @Configuration
 public class AccessCheckAspect {
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-	@Before("execution(* com.paltecno.springaop.movierecommenderaop..*.*Filtering(..)) || execution(String com.paltecno.springaop.movierecommenderaop..*.*(..))")
+	@Before("com.paltecno.springaop.movierecommenderaop.aspect.JoinPointConfig.movieBeanPointcut()")
+	// @Before("execution(*
+	// com.paltecno.springaop.movierecommenderaop..*.*Filtering(..)) ||
+	// execution(String com.paltecno.springaop.movierecommenderaop..*.*(..))")
 	// @Before("execution(String
 	// com.paltecno.springaop.movierecommenderaop..*.*(String))")
 	// @Before("execution(*

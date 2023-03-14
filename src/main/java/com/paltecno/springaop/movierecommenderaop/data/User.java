@@ -1,4 +1,4 @@
-package com.paltecno.springaop.movierecommenderaop.repository;
+package com.paltecno.springaop.movierecommenderaop.data;
 
 import org.springframework.stereotype.Repository;
 
