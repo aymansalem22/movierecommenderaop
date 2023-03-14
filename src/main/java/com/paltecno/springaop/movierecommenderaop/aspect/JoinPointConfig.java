@@ -23,4 +23,8 @@ public class JoinPointConfig {
 	public void movieBeanPointcut() {
 	}
 
+	@Pointcut("@annotation(com.paltecno.springaop.movierecommenderaop.aspect.MeasureTime")
+	public void measureTimeAnnotation() {
+	}
+
 }
